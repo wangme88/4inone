@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282828"
+    tools:context=".SnakePopUp">
+
+    <TextView
+        android:id="@+id/difficulty_text"
+        android:layout_width="178dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:text="Select Board Size:"
+        android:textColor="#ffffe0"
+        android:textSize="24sp"
+        android:gravity="center"
+        app:fontFamily="sans-serif-condensed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/mboard_select"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        app:layout_constraintBottom_toTopOf="@+id/start_mgame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficulty_text">
+
+        <RadioButton
+            android:id="@+id/snake_8"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:textColor="#ffffe0"
+            android:text="8 x 8"
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-condensed" />
+
+        <RadioButton
+            android:id="@+id/snake_12"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="12 x 12"
+            android:textColor="#ffffe0"
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-condensed" />
+
+        <RadioButton
+            android:id="@+id/snake_16"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="16 x 16"
+            android:textColor="#ffffe0"
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-condensed" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/start_mgame"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="182dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginBottom="200dp"
+        android:text="Start Game"
+        android:textColor="#ffffe0"
+        android:textSize="20sp"
+        app:fontFamily="sans-serif-condensed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mboard_select" />
+
+</android.support.constraint.ConstraintLayout>
